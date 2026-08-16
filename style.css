@@ -436,6 +436,21 @@ footer {
   font-weight: 600;
 }
 
+.publication-status {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.25rem 0.75rem;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: var(--navy);
+  background: #eef3f6;
+
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
 
 /* ============================================================
    10. RESEARCH & PROJECT SECTIONS
