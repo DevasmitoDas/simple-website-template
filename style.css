@@ -521,6 +521,35 @@ footer {
   font-weight: 700;
 }
 
+.training-date {
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+@media (max-width: 650px) {
+  .training-date {
+    float: none;
+    display: block;
+    margin-top: 0.3rem;
+  }
+}
+
+.activity-date {
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+@media (max-width: 650px) {
+  .activity-date {
+    float: none;
+    display: block;
+    margin-top: 0.4rem;
+  }
+}
 
 /* ============================================================
    12. SOCIAL LINKS
