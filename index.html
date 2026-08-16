@@ -1,79 +1,847 @@
 <!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+<head>
+  <!-- =========================================================
+       BASIC PAGE SETUP
+  ========================================================== -->
+  <meta charset="utf-8">
 
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
+  <title>Devasmito Das | Control, Nonlinear Dynamics & Robotics</title>
 
-    <header id="header">
-      <img src="logo.jpg">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+  <meta name="description"
+        content="Academic website of Dr. Devasmito Das. Research in nonlinear control, fractional-order dynamics, predictive control, chaos, networked systems and robotics.">
+
+  <meta name="author" content="Devasmito Das">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+
+  <!-- =========================================================
+       STYLESHEETS
+  ========================================================== -->
+
+  <!-- Normalize browser default styles -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+    type="text/css">
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    type="text/css">
+
+  <!-- Custom stylesheet -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+
+  <!-- =========================================================
+       JQUERY
+  ========================================================== -->
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header id="header">
+
+    <!-- Replace profile.jpg with your professional photograph -->
+    <img
+      src="profile.jpg"
+      alt="Devasmito Das"
+      class="profile-photo">
+
+    <h1>Devasmito Das, Ph.D.</h1>
+
+    <p class="subtitle">
+      Control Systems · Nonlinear Dynamics · Robotics
+    </p>
+
+    <p class="affiliation">
+      Incoming Maître de conférences,
+      Université de Montpellier · LIRMM
+    </p>
+
+
+    <!-- =======================================================
+         NAVIGATION MENU
+    ======================================================== -->
+
+    <ul class="main-menu">
+
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#research">Research</a>
+      </li>
+
+      <li>
+        <a href="#publications">Publications</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#teaching">Teaching</a>
+      </li>
+
+      <li>
+        <a href="#achievements">Achievements</a>
+      </li>
+
+      <li>
+        <a href="#service">Academic Service</a>
+      </li>
+
+      <li>
+        <a href="#cv">CV</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+
+  </header>
+
+
+
+  <!-- =========================================================
+       MAIN CONTENT
+  ========================================================== -->
+
+  <div id="container">
+
+    <div class="inner">
+
+      <div id="content">
+
+
+        <!-- =====================================================
+             HOME
+        ====================================================== -->
+
+        <div id="home" class="content-region hide">
+
+          <h2>Welcome</h2>
+
+          <p>
+            Welcome to my academic website.
+          </p>
+
+          <p>
+            I am <strong>Devasmito Das</strong>, a researcher working
+            at the intersection of
+            <strong>control theory, nonlinear dynamics, fractional-order
+            systems, chaos, predictive control and robotics</strong>.
+          </p>
+
+          <p>
+            My research focuses on understanding complex nonlinear
+            dynamical systems and developing advanced control strategies
+            for systems exhibiting memory, uncertainty, chaotic behaviour,
+            strong nonlinearities and network interactions.
+          </p>
+
+          <p>
+            From September 2026, I will join the
+            <strong>Université de Montpellier</strong> as a
+            <strong>Maître de conférences</strong>, with research activities
+            at <strong>LIRMM</strong>.
+          </p>
+
+
+          <h3>Research Interests</h3>
+
+          <ul>
+
+            <li>Nonlinear Control Systems</li>
+
+            <li>Fractional-Order Dynamical Systems</li>
+
+            <li>Chaos Control and Synchronization</li>
+
+            <li>Model Predictive Control</li>
+
+            <li>Nonlinear Model Predictive Control</li>
+
+            <li>Networked Dynamical Systems</li>
+
+            <li>Soft and Continuum Robotics</li>
+
+            <li>Robust and Adaptive Control</li>
+
+            <li>State Estimation and Observers</li>
+
+            <li>Learning-Based Control</li>
+
+          </ul>
+
+
+          <h3>Professional Profiles</h3>
+
+          <p class="social-links">
+
+            <!-- Replace # with your actual URLs -->
+
+            <a href="#" target="_blank">
+              Google Scholar
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="#" target="_blank">
+              ORCID
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="#" target="_blank">
+              ResearchGate
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="#" target="_blank">
+              LinkedIn
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="#" target="_blank">
+              GitHub
+            </a>
+
+          </p>
+
         </div>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <div id="about" class="content-region hide">
+
+          <h2>About Me</h2>
+
+          <p>
+            I received my Ph.D. through a joint doctoral programme
+            between
+            <strong>École Centrale de Nantes, France</strong>,
+            and the
+            <strong>Indian Institute of Technology Madras, India</strong>.
+          </p>
+
+          <p>
+            My doctoral research focused on
+            <strong>coupled networks of fractional nonlinear oscillators</strong>,
+            with particular emphasis on fractional dynamics,
+            synchronization, chaos, nonlinear control and predictive
+            control.
+          </p>
+
+          <p>
+            My broader research objective is to develop mathematically
+            sound and computationally efficient control methodologies
+            for nonlinear dynamical systems with memory, uncertainty,
+            constraints and complex interactions.
+          </p>
+
+          <p>
+            My current research interests increasingly extend toward
+            robotic systems, including
+            <strong>soft and continuum robots, cable-driven robots,
+            nonlinear predictive control, adaptive control and
+            physics-informed intelligent control</strong>.
+          </p>
+
+
+          <h3>Education</h3>
+
+          <p>
+            <strong>Ph.D. in Control and Dynamical Systems</strong><br>
+            École Centrale de Nantes / IIT Madras
+          </p>
+
+
+          <h3>Current Appointment</h3>
+
+          <p>
+            <strong>Maître de conférences</strong><br>
+            Université de Montpellier<br>
+            LIRMM — Laboratoire d'Informatique, de Robotique et
+            de Microélectronique de Montpellier<br>
+            From September 2026
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             RESEARCH
+        ====================================================== -->
+
+        <div id="research" class="content-region hide">
+
+          <h2>Research</h2>
+
+
+          <h3>Nonlinear and Fractional-Order Dynamics</h3>
+
+          <p>
+            Fractional-order systems provide mathematical models with
+            intrinsic memory and hereditary effects. My work investigates
+            their nonlinear behaviour, chaos, synchronization,
+            stability and control.
+          </p>
+
+
+          <h3>Chaos Control</h3>
+
+          <p>
+            I study feedback strategies for suppressing, stabilizing and
+            exploiting chaotic behaviour in nonlinear systems, including
+            Rössler, Duffing, Lorenz-type and networked oscillators.
+          </p>
+
+
+          <h3>Model Predictive Control</h3>
+
+          <p>
+            My research includes linear and nonlinear model predictive
+            control for constrained dynamical systems, including
+            fractional-order systems, chaotic dynamics and robotic
+            applications.
+          </p>
+
+
+          <h3>Networked Dynamical Systems</h3>
+
+          <p>
+            I investigate synchronization, collective dynamics and
+            control of interconnected nonlinear oscillators and
+            large-scale dynamical networks.
+          </p>
+
+
+          <h3>Robotics</h3>
+
+          <p>
+            Current directions include nonlinear and predictive control
+            of soft robots, continuum robots and cable-driven robotic
+            systems, with particular interest in real-time control,
+            robustness, state estimation and safety constraints.
+          </p>
+
+
+          <h3>Learning-Based Control</h3>
+
+          <p>
+            I am also interested in combining classical control theory
+            with machine learning, reinforcement learning and
+            physics-informed methods while maintaining stability,
+            interpretability and robustness.
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PUBLICATIONS
+        ====================================================== -->
+
+        <div id="publications" class="content-region hide">
+
+          <h2>Publications</h2>
+
+          <p>
+            Selected publications are listed below. A complete publication
+            list will be continuously updated.
+          </p>
+
+
+          <h3>Journal Articles</h3>
+
+          <ol>
+
+            <li>
+              <strong>Devasmito Das</strong> et al.,
+              Fractional-order nonlinear dynamics and control.
+              <br>
+              <em>Journal information / DOI</em>
+            </li>
+
+            <li>
+              <strong>Devasmito Das</strong> et al.,
+              Chaos suppression and predictive control of fractional
+              dynamical systems.
+              <br>
+              <em>Journal information / DOI</em>
+            </li>
+
+          </ol>
+
+
+          <h3>Conference Papers</h3>
+
+          <ol>
+
+            <li>
+              <strong>D. Das</strong> et al.,
+              Time-delay feedback control of nonlinear chaotic systems.
+              <br>
+              <em>IFAC</em>
+            </li>
+
+            <li>
+              <strong>D. Das</strong> et al.,
+              Fractional model predictive control of chaotic oscillators.
+              <br>
+              <em>IFAC</em>
+            </li>
+
+            <li>
+              <strong>D. Das</strong> et al.,
+              Fractional-order coupled oscillators for
+              synchronization-based robotic locomotion.
+            </li>
+
+          </ol>
+
+
+          <p>
+            <strong>
+              <a href="#" target="_blank">
+                View complete publication list on Google Scholar →
+              </a>
+            </strong>
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <div id="projects" class="content-region hide">
+
+          <h2>Research Projects</h2>
+
+
+          <h3>Fractional-Order Chaotic Oscillators</h3>
+
+          <p>
+            Modelling, analysis and control of nonlinear oscillators
+            governed by fractional derivatives, with emphasis on memory,
+            chaos and stability.
+          </p>
+
+
+          <h3>Chaos Suppression using Predictive Control</h3>
+
+          <p>
+            Development of predictive control frameworks for stabilization
+            and synchronization of strongly nonlinear and chaotic systems.
+          </p>
+
+
+          <h3>Coupled Oscillator Networks</h3>
+
+          <p>
+            Investigation of synchronization and collective behaviour
+            in heterogeneous networks of fractional and nonlinear
+            oscillators.
+          </p>
+
+
+          <h3>Soft and Continuum Robotics</h3>
+
+          <p>
+            Nonlinear modelling, estimation and advanced control of
+            compliant robotic structures for interaction with complex
+            environments.
+          </p>
+
+
+          <h3>Cable-Driven Parallel Robots</h3>
+
+          <p>
+            Robust and adaptive nonlinear model predictive control
+            incorporating tension constraints, workspace feasibility
+            and uncertain payloads.
+          </p>
+
+
+          <h3>Large-Scale Chaotic Systems</h3>
+
+          <p>
+            Investigation of control limitations, actuation accessibility
+            and stabilization in high-dimensional systems such as
+            multiscale Lorenz-96 dynamics.
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             TEACHING
+        ====================================================== -->
+
+        <div id="teaching" class="content-region hide">
+
+          <h2>Teaching</h2>
+
+          <p>
+            My teaching activities cover control engineering,
+            programming, mechanical engineering and dynamical systems.
+          </p>
+
+
+          <h3>Université de Montpellier / Polytech Montpellier</h3>
+
+          <ul>
+
+            <li>
+              Algorithms and Programming
+            </li>
+
+            <li>
+              Programming
+            </li>
+
+            <li>
+              Computer Applications and Robotics
+            </li>
+
+            <li>
+              Student Projects and Research Projects
+            </li>
+
+          </ul>
+
+
+          <h3>École Centrale de Nantes</h3>
+
+          <ul>
+
+            <li>
+              Control and Observation
+            </li>
+
+            <li>
+              Tutorials and Laboratory Sessions
+            </li>
+
+            <li>
+              Engineering Student Projects
+            </li>
+
+          </ul>
+
+
+          <h3>Indian Institute of Technology Madras</h3>
+
+          <ul>
+
+            <li>
+              Machine Design
+            </li>
+
+            <li>
+              Theory of Vibrations
+            </li>
+
+            <li>
+              Rotor Dynamics Laboratory
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             ACHIEVEMENTS
+        ====================================================== -->
+
+        <div id="achievements" class="content-region hide">
+
+          <h2>Achievements & Highlights</h2>
+
+          <ul>
+
+            <li>
+              Qualification in Section 61 of the
+              Conseil National des Universités (CNU), France.
+            </li>
+
+            <li>
+              Appointed Maître de conférences at the
+              Université de Montpellier.
+            </li>
+
+            <li>
+              Joint doctoral training between France and India.
+            </li>
+
+            <li>
+              Publications in nonlinear dynamics, fractional-order
+              systems and control.
+            </li>
+
+            <li>
+              Presentations at international conferences in control,
+              nonlinear dynamics and robotics.
+            </li>
+
+            <li>
+              Research collaborations with institutions in France,
+              India, Japan and other international research groups.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             ACADEMIC SERVICE
+        ====================================================== -->
+
+        <div id="service" class="content-region hide">
+
+          <h2>Academic Service</h2>
+
+
+          <h3>Peer Review</h3>
+
+          <p>
+            Reviewer for international journals and conferences in
+            control engineering, nonlinear systems, artificial
+            intelligence and dynamical systems.
+          </p>
+
+
+          <h3>Conference Activities</h3>
+
+          <p>
+            Contributor and presenter at international conferences
+            covering nonlinear control, fractional dynamics,
+            predictive control, robotics and chaotic systems.
+          </p>
+
+
+          <h3>Research Collaboration</h3>
+
+          <p>
+            I actively collaborate with researchers working on
+            nonlinear control, stable-manifold methods, adaptive control,
+            robotics, large-scale dynamics and fractional-order systems.
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CV
+        ====================================================== -->
+
+        <div id="cv" class="content-region hide">
+
+          <h2>Curriculum Vitae</h2>
+
+          <p>
+            My complete academic CV contains information on:
+          </p>
+
+          <ul>
+
+            <li>Academic appointments</li>
+
+            <li>Education</li>
+
+            <li>Research experience</li>
+
+            <li>Publications</li>
+
+            <li>Conference presentations</li>
+
+            <li>Teaching experience</li>
+
+            <li>Research projects</li>
+
+            <li>Academic service</li>
+
+            <li>Awards and qualifications</li>
+
+          </ul>
+
+          <p>
+
+            <!-- Put your CV PDF in the same GitHub folder -->
+
+            <a
+              href="Devasmito_Das_CV.pdf"
+              target="_blank"
+              class="button">
+
+              Download CV (PDF)
+
+            </a>
+
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <div id="contact" class="content-region hide">
+
+          <h2>Contact</h2>
+
+          <p>
+            <strong>Dr. Devasmito Das</strong>
+          </p>
+
+          <p>
+            Maître de conférences<br>
+            Université de Montpellier
+          </p>
+
+          <p>
+            LIRMM<br>
+            Laboratoire d'Informatique, de Robotique et
+            de Microélectronique de Montpellier
+          </p>
+
+
+          <h3>Email</h3>
+
+          <p>
+            <!-- Replace this with your institutional email -->
+
+            <a href="mailto:your.email@umontpellier.fr">
+              your.email@umontpellier.fr
+            </a>
+
+          </p>
+
+
+          <h3>Professional Profiles</h3>
+
+          <p>
+
+            <a href="#" target="_blank">
+              Google Scholar
+            </a>
+
+            <br>
+
+            <a href="#" target="_blank">
+              ORCID
+            </a>
+
+            <br>
+
+            <a href="#" target="_blank">
+              LinkedIn
+            </a>
+
+            <br>
+
+            <a href="#" target="_blank">
+              ResearchGate
+            </a>
+
+            <br>
+
+            <a href="#" target="_blank">
+              GitHub
+            </a>
+
+          </p>
+
+        </div>
+
+
       </div>
+
     </div>
 
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+  </div>
+
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <p>
+      © 2026 Devasmito Das
+    </p>
+
+    <p>
+      Control Systems · Nonlinear Dynamics · Robotics
+    </p>
+
+    <p>
+      Hosted freely with GitHub Pages
+    </p>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
 </html>
